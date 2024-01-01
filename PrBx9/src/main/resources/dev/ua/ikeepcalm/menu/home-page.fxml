@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="borderPane" fx:id="borderPane" maxHeight="400" maxWidth="700" minHeight="400" minWidth="700" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.ua.ikeepcalm.controllers.menu.HomePageController">
+    <left>
+        <VBox id="sideBar" prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #373F51;" BorderPane.alignment="CENTER">
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#onHomeButtonClicked" prefHeight="58.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-border-color: a9bcd0; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
+                <font>
+                    <Font name="Corbel" size="19.0" />
+                </font>
+            </Button>
+            <Button fx:id="filesButton" mnemonicParsing="false" onAction="#onFilesButtonClicked" prefHeight="58.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-border-color: a9bcd0; -fx-border-width: 0px 0px 2px 0px;" text="Files" textFill="WHITE">
+                <font>
+                    <Font name="Corbel" size="19.0" />
+                </font>
+            </Button>
+            <Button fx:id="recordsButton" mnemonicParsing="false" onAction="#onRecordsButtonClicked" prefHeight="56.0" prefWidth="126.0" style="-fx-background-color: transparent; -fx-border-color: a9bcd0; -fx-border-width: 0px 0px 2px 0px;" text="Records" textFill="WHITE">
+                <font>
+                    <Font name="Corbel" size="19.0" />
+                </font>
+            </Button>
+         <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onExitButtonClicked" prefHeight="56.0" prefWidth="126.0" style="-fx-background-color: transparent; -fx-border-color: a9bcd0; -fx-border-width: 0px 0px 2px 0px;" text="Exit" textFill="WHITE">
+            <font>
+               <Font name="Corbel" size="19.0" />
+            </font>
+         </Button>
+        </VBox>
+    </left>
+   <center>
+       <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <TextArea editable="false" prefHeight="362.0" prefWidth="443.0" text="Welcome to the &quot;Files &amp; Records Editor 9&quot; !&#10;&#10;This app will help you to manage files and records in them.&#10;To be specific, these are the functions of the current version:&#10;&#10;- Create Files&#10;- Read Files&#10;- Delete Files&#10;&#10;also, when the File has been read, you can also manage records in it: &#10;&#10;- Create Records&#10;- Read Records&#10;- Edit Records&#10;- Sort Records&#10;- Insert Records&#10;- Delete Records&#10;&#10;To start, choose the File, or create a new one. Use the side-menu :)&#10;" />
+       </StackPane>
+   </center>
+</BorderPane>
